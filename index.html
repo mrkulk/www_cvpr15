@@ -1,0 +1,155 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example that shows off a responsive product landing page.">
+
+<title>Picture: A Probabilistic Programming Language for Scene Perception</title>
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- 
+<script src="http://use.typekit.net/gis6vng.js"></script>
+<script>
+    try { Typekit.load(); } catch (e) {}
+</script>
+ -->
+
+</head>
+<body>
+
+
+
+
+
+
+<div class="content">
+    <div class="header">
+        <div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
+                <div align="left">
+                    <img src="Untitled.jpg" height="7%" width="7%" >
+                </div>
+<!--             <ul>
+                <li class="pure-menu-selected"><a href="#">Home</a></li>
+                <li><a href="people.html">People</a></li>
+            </ul> -->
+                <div style="margin-top:-40px;" align="right">
+                    <img src="http://edtechtimes.com/wp-content/uploads/2012/06/csail.jpg" height="3%" width="3%" >
+                    <img src="http://cloudtimes.org/wp-content/uploads/2013/03/mit-logo.jpg" height="8%" width="8%" >
+                    <img src="http://bcs.mit.edu/docs/Logo+Type%201218x345%2072dpi%20GIF.gif" height="8%" width="8%" >
+                </div>
+        </div>
+    </div>
+
+    <div class="splash">
+        <div class="pure-g-r">
+            <div class="pure-u-1-3">
+                <div class="l-box splash-image">
+                    <br><br><br><br>
+                    <div style="width:100%; margin-left:7%">
+                        <a href="res.png">
+                            <img src="extended_res.png" style="width:100%"
+                                alt="Placeholder image for example.">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pure-u-2-3">
+                <div class="l-box splash-text">
+                    <h1 class="splash-head">
+                        Picture: A Probabilistic Programming Language for Scene Perception
+                    </h1>
+
+                    <h2 class="splash-subhead">
+
+Recent progress on probabilistic modeling and statistical learning, coupled with the availability of large training datasets, has led to remarkable progress in computer vision. Generative probabilistic models, or ``analysis-by-synthesis'' approaches, can capture rich scene structure but have been less widely applied than their discriminative counterparts, as they often require considerable problem-specific engineering in model structure and inference strategies. Here we present Picture, a probabilistic programming language for scene understanding that allows researchers to coherently express complex generative vision models, while automatically solving them using general-purpose inference machinery. Picture provides a stochastic scene language that can express generative models for arbitrary 2D/3D scenes, as well as a flexible representation layer for comparing scene hypotheses with observed images by matching not simply pixels, but also more abstract features (e.g., contours, or deep neural network activations). Inference can flexibly integrate advanced top-down Monte Carlo strategies with fast bottom-up data-driven methods; both the representation layer and the inference engine can thereby build directly on recent progress in discriminatively trained vision systems. We use Picture to write programs for generative 3D face analysis, 3D human pose estimation, and 3D object reconstruction - each in under 50 lines of code, and each competitive with specially engineered baselines. Picture thus opens up new avenues for researchers to build and compose more complex object and scene models, along with the general-purpose inference algorithms and image representations needed to deploy them on real-world vision problems.
+
+                    </h2>
+                    <p>
+                    Contributors: <a href="http://tejask.com/">Tejas D. Kulkarni</a> (MIT), <a href="http://research.microsoft.com/en-us/um/people/pkohli/">Pushmeet Kohli</a> (MSR Cambridge, UK), <a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a> (MIT),<a href="http://web.mit.edu/vkm/www/">Vikash Mansinghka</a> (MIT)                     
+                    </p>
+                    <p>
+                        <a href="http://tejask.com/wp-content/uploads/2015/04/cvpr15.pdf" class="pure-button pure-button-success">Paper</a>
+                        <a href="misc_resources.zip" class="pure-button primary-button">Misc</a>
+                    </p>
+                    Note: The modeling/inference engine will be released after private beta testing.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="pure-g-r content-ribbon">
+            <div class="pure-u-1-2">
+                <h2> Overview </h2>
+                <div class="l-box">
+                    <img src="arch1.png" style="width:70%">
+                </div>
+            </div>
+            <div class="pure-u-1-2">
+                <div class="l-box">
+                    <img src="arch2.png" style="width:70%">
+                </div>
+            </div>
+        </div>
+
+        <div class="pure-g-r content-ribbon">
+            <div class="pure-u-1-2">
+                <h2> Sample inference trajectories for demo programs</h2> 
+            </div>
+        </div>
+
+        <div class="pure-g-r content-ribbon">
+                       
+            <div class="pure-u-1-1" style="align:center;">
+                <video width="200" height="200" controls>
+                    <source src="3D_Face_MOVIE.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <img src="observed_testimage_pose.jpg" style="margin-left:5em;width:11.2%">
+                <video width="200" height="200" controls>
+                    <source src="pose_movie.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="observed_testimage_shape.jpg" style="margin-left:5em;width:10%">
+                <video width="200" height="200" controls>
+                    <source src="inference_movie.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+
+        <div class="l-box ribbon">
+            <a href="mailto:tejasdkulkarni@gmail.com" class="pure-button primary-button">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        MIT Computational Cognitive Science and Probabilistic Computing Group. Template borrowed from YUI Team and purecss.io
+    </div>
+</div>
+
+<script src="http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js"></script>
+<script>
+YUI().use('node-base', 'node-event-delegate', function (Y) {
+    // This just makes sure that the href="#" attached to the <a> elements
+    // don't scroll you back up the page.
+    Y.one('body').delegate('click', function (e) {
+        e.preventDefault();
+    }, 'a[href="#"]');
+});
+</script>
+
+
+
+</body>
+</html>
